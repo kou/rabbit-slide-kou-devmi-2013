@@ -31,7 +31,7 @@
     def initialize
       @mutex = Mutex.new
     end
-    def []=(data)
+    def data=(data)
       @mutex.synchronize do
         @data = data
       end
@@ -45,7 +45,7 @@
     def initialize
       @mutex = Mutex.new
     end
-    def []=(data)
+    def data=(data)
       synchronize do
         @data = data
       end
