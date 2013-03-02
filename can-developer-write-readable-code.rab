@@ -27,13 +27,13 @@
 = 例1: リーダブル？
 
   # coderay ruby
-  class Model
+  class Person
     def initialize
       @mutex = Mutex.new
     end
-    def data=(data)
+    def name=(name)
       @mutex.synchronize do
-        @data = data
+        @name = name
       end
     end
   end
@@ -41,13 +41,13 @@
 = 例2: リーダブル？
 
   # coderay ruby
-  class Model
+  class Person
     def initialize
       @mutex = Mutex.new
     end
-    def data=(data)
+    def name=(name)
       synchronize do
-        @data = data
+        @name = name
       end
     end
     def synchronize
